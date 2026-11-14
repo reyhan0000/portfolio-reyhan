@@ -66,7 +66,7 @@ const translations = {
 
     experienceBadge: 'PENGALAMAN',
     experienceTitle: 'Pengalaman Kerja',
-    expOneTitle: 'Pranata Komputer (Magang)',
+    expOneTitle: 'System Analyst & Web Developer (Magang)',
     expOneCompany: 'Dinas Perkebunan Provinsi Jawa Barat',
     expOneDesc: 'Berpartisipasi dalam analisis kebutuhan pengguna, perancangan model proses bisnis (BPMN) dan UML, pengembangan aplikasi berbasis Laravel & MySQL, pengujian fungsional (Black Box testing), serta penyusunan dokumentasi teknis sistem SIBANSAR.',
     expOneLink: 'Lihat hasil pekerjaan (SIBANSAR) →',
@@ -486,7 +486,7 @@ const translations = {
 
     experienceBadge: 'EXPERIENCE',
     experienceTitle: 'Work Experience',
-    expOneTitle: 'Computer Technician (Internship)',
+    expOneTitle: 'System Analyst & Web Developer (Internship)',
     expOneCompany: 'West Java Provincial Plantation Office',
     expOneDesc: 'Participated in user needs analysis, business process modeling (BPMN) and UML, Laravel & MySQL application development, functional testing (Black Box testing), and preparation of technical system documentation for SIBANSAR.',
     expOneLink: 'See work result (SIBANSAR) →',
@@ -1317,7 +1317,7 @@ function initNavigation() {
 
   // Instant active state on click with smooth scroll locking
   navItems.forEach(link => {
-    link.addEventListener('click', function() {
+    link.addEventListener('click', function () {
       setActiveLink(this);
       isClickScrolling = true;
       clearTimeout(clickTimeout);
@@ -1369,7 +1369,7 @@ const caseStudyData = {
   sibansar: {
     title: 'SIBANSAR - Sistem Informasi Bantuan Sarana Prasarana',
     subtitle: 'Dinas Perkebunan Provinsi Jawa Barat & Proyek Tugas Akhir D3',
-    role: 'Pranata Komputer Magang · System Analyst / QA Tester',
+    role: 'System Analyst & Web Developer / QA Tester',
     duration: 'Maret 2026 – Juni 2026',
     problem: 'Penyaluran bantuan sarana dan prasarana (sarpras) perkebunan kepada ratusan kelompok tani sebelumnya menghadapi kendala verifikasi fisik, penumpukan berkas manual, duplikasi penerima bantuan, dan sulitnya melacak tahapan disposisi/persetujuan oleh Kepala Bidang.',
     solution: 'Merancang dan mengembangkan aplikasi web terintegrasi berbasis Laravel & MySQL yang memisahkan akses pengguna ke dalam 4 peran (Role-Based Access Control). Dilengkapi alur verifikasi berkas digital bertahap, notifikasi status pengajuan, pelacakan riwayat bantuan, dan cetak berita acara serta laporan rekapitulasi real-time.',
@@ -1861,7 +1861,7 @@ function initBackToTop() {
    -------------------------------------------------------------------------- */
 function initRippleEffects() {
   document.querySelectorAll('.btn, .btn-nav-cv').forEach(btn => {
-    btn.addEventListener('click', function(e) {
+    btn.addEventListener('click', function (e) {
       const rect = this.getBoundingClientRect();
       const ripple = document.createElement('span');
       const size = Math.max(rect.width, rect.height) * 2;
