@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studi Kasus SIBANSAR | Muhammad Reyhan Fadina R.</title>
+
+  <meta name="description"
+    content="Studi kasus perancangan dan implementasi SIBANSAR - Sistem Informasi Bantuan Sarana Prasarana Dinas Perkebunan Jawa Barat oleh Muhammad Reyhan Fadina R.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2.9">
+</head>
+
+<body class="case-study-page">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html#hero" class="brand-link">
+        <span class="brand-name">Reyhan Fadinar.</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navLinks">
+          <li><a href="index.html#tentang" class="nav-item-link" data-i18n="about">Tentang</a></li>
+          <li><a href="index.html#pengalaman" class="nav-item-link" data-i18n="experience">Pengalaman</a></li>
+          <li><a href="index.html#proyek" class="nav-item-link active" data-i18n="projects">Proyek</a></li>
+          <li><a href="index.html#keahlian" class="nav-item-link" data-i18n="skills">Core Skills</a></li>
+          <li><a href="index.html#pencapaian" class="nav-item-link" data-i18n="achievements">Pencapaian</a></li>
+          <li><a href="index.html#sertifikasi" class="nav-item-link" data-i18n="certifications">Sertifikasi</a></li>
+          <li><a href="index.html#kontak" class="nav-item-link" data-i18n="contact">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language switcher">
+          <button class="lang-btn active" type="button" data-lang="id">ID</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+        <a href="assets/CV_MuhammadReyhanFadinar_QA_2026.pdf" download="CV_MuhammadReyhanFadinar_QA_2026.pdf" target="_blank"
+          class="btn-nav-cv" title="Unduh CV Muhammad Reyhan Fadina R (PDF)">CV</a>
+        <button type="button" class="mobile-menu-btn" id="mobileToggle" aria-label="Menu Navigasi">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Breadcrumb -->
+    <div class="case-breadcrumb-nav">
+      <a href="index.html#proyek" data-i18n="caseAllProjectsArrow">&larr; Semua proyek</a>
+      <span>/</span>
+      <span data-i18n="caseProjectSibansar">SIBANSAR</span>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="case-hero-banner">
+      <div class="case-hero-media">
+        <div class="project-visual-stack" aria-hidden="true">
+          <img src="assets/implementasi/sibansar-dashboard-operator.png" alt="" class="mockup-sheet sheet-back" loading="lazy" />
+          <img src="assets/implementasi/sibansar-kelola-pengajuan.png" alt="" class="mockup-sheet sheet-mid" loading="lazy" />
+          <img src="assets/implementasi/sibansar-dashboard-kabid.png" alt="" class="mockup-sheet sheet-front" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="case-hero-title-box">
+        <div class="case-hero-logo-row">
+          <div class="case-hero-logo green-logo">
+            <img src="assets/logos/disbun.png" alt="Logo Dinas Perkebunan" class="case-hero-logo-img" />
+          </div>
+          <h1 class="case-hero-h1" data-i18n="caseHeroTitleSibansar">SIBANSAR &mdash; Sistem Informasi Bantuan Sarana Prasarana</h1>
+        </div>
+        <p class="case-hero-desc" data-i18n="caseHeroDescSibansar">
+          Sistem digitalisasi pengajuan bantuan sarana prasarana perkebunan terintegrasi dengan validasi bertahap untuk
+          Dinas Perkebunan Provinsi Jawa Barat.
+        </p>
+
+        <!-- Official Credential Documents Strip -->
+        <div class="case-hero-docs-strip">
+          <span class="case-hero-docs-label" data-i18n="caseOfficialCredentials">Kredensial Resmi:</span>
+          <a href="assets/Sertifikat_PKL_Disbun.pdf" target="_blank" class="case-hero-doc-pill"
+            title="Open Internship Certificate / PKL Certificate (PDF)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span data-i18n="caseInternshipCertSibansar">Surat Keterangan Magang PKL (PDF) ↗</span>
+          </a>
+          <a href="assets/BVA_SIBANSAR.pdf" target="_blank" class="case-hero-doc-pill"
+            title="Open Official BVA Test Document (PDF)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span data-i18n="caseBvaOfficialDocSibansar">Dokumen Uji BVA Resmi (PDF) ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metadata Strip -->
+    <div class="case-meta-grid">
+      <div class="case-meta-cell">
+        <span data-i18n="caseActivity">Kegiatan</span>
+        <strong data-i18n="caseActivityValueSibansar">Magang &amp; Tugas Akhir D3</strong>
+      </div>
+      <div class="case-meta-cell">
+        <span data-i18n="caseInstitution">Instansi</span>
+        <strong class="case-instansi-val" data-i18n="caseInstitutionValueSibansar">
+          <img src="assets/logos/disbun.png" alt="Dinas Perkebunan Prov. Jabar" class="case-meta-logo" />
+          Dinas Perkebunan Prov. Jabar
+        </strong>
+      </div>
+      <div class="case-meta-cell">
+        <span data-i18n="caseRole">Peran Saya</span>
+        <strong data-i18n="caseRoleValueSibansar">System Analyst, QA &amp; Web Developer</strong>
+      </div>
+      <div class="case-meta-cell">
+        <span data-i18n="casePeriod">Periode</span>
+        <strong data-i18n="casePeriodValueSibansar">Maret &ndash; Juni 2026</strong>
+      </div>
+    </div>
+
+    <!-- Tools Strip -->
+    <div class="case-tools-strip">
+      <span class="case-tools-tag" data-i18n="caseTools">Tools:</span>
+      <span class="tool-chip"><img src="assets/icons/enterprise-architect.svg" alt="Enterprise Architect"
+          class="tool-chip-icon" /> Enterprise Architect</span>
+      <span class="tool-chip"><img src="assets/icons/bpmn.svg" alt="BPMN 2.0" class="tool-chip-icon" /> BPMN 2.0</span>
+      <span class="tool-chip"><img src="assets/icons/laravel.svg" alt="Laravel" class="tool-chip-icon" /> Laravel
+        Framework</span>
+      <span class="tool-chip"><img src="assets/icons/mysql.svg" alt="MySQL" class="tool-chip-icon" /> MySQL
+        Database</span>
+      <span class="tool-chip"><img src="assets/icons/postman.svg" alt="Postman" class="tool-chip-icon" /> Postman</span>
+      <span class="tool-chip"><img src="assets/icons/vscode.svg" alt="VS Code" class="tool-chip-icon" /> VS Code</span>
+      <span class="tool-chip"><img src="assets/icons/testing.svg" alt="Black Box Testing" class="tool-chip-icon" />
+        Black Box Testing</span>
+      <span class="tool-chip"><img src="assets/icons/git.svg" alt="Git" class="tool-chip-icon" /> Git &amp; <img
+          src="assets/icons/github.svg" alt="GitHub" class="tool-chip-icon" style="margin-left:2px;" /> GitHub</span>
+      <span class="tool-chip"><img src="assets/icons/bootstrap.svg" alt="Bootstrap 5" class="tool-chip-icon" />
+        Bootstrap 5</span>
+    </div>
+
+    <!-- Metrics Grid -->
+    <div class="case-metrics-grid">
+      <div class="case-metric-box">
+        <span class="case-metric-num">14</span>
+        <span class="case-metric-label" data-i18n="caseMetricRequirements">Persyaratan fungsional</span>
+      </div>
+      <div class="case-metric-box">
+        <span class="case-metric-num">4</span>
+        <span class="case-metric-label" data-i18n="caseMetricRoles">Hak akses peran (RBAC)</span>
+      </div>
+      <div class="case-metric-box">
+        <span class="case-metric-num">12</span>
+        <span class="case-metric-label" data-i18n="caseMetricErds">Entitas basis data (ERD)</span>
+      </div>
+      <div class="case-metric-box">
+        <span class="case-metric-num">100%</span>
+        <span class="case-metric-label" data-i18n="caseMetricTestingPassed">Pengujian fungsional lolos</span>
+      </div>
+    </div>
+
+    <!-- Main Content Layout with Sticky Sidebar -->
+    <div class="case-study-body-grid">
+
+      <!-- Sticky Sidebar -->
+      <aside class="case-nav-sidebar">
+        <div class="case-nav-sidebar-title" data-i18n="caseInsideStudy">DI DALAM STUDI KASUS</div>
+        <a href="#konteks" class="case-nav-sidebar-link active" data-i18n="caseProjectContext">Konteks proyek</a>
+        <a href="#analisis" class="case-nav-sidebar-link" data-i18n="caseNeedsAnalysis">01 Analisis Kebutuhan</a>
+        <a href="#proses-bisnis" class="case-nav-sidebar-link" data-i18n="caseBusinessProcess">02 Pemodelan Proses Bisnis</a>
+        <a href="#perancangan" class="case-nav-sidebar-link" data-i18n="caseSystemDesign">03 Perancangan Sistem</a>
+        <a href="#implementasi" class="case-nav-sidebar-link" data-i18n="caseImplementation">04 Implementasi Aplikasi</a>
+        <a href="#pengujian" class="case-nav-sidebar-link" data-i18n="caseTestingDoc">05 Dokumentasi & QA</a>
+        <a href="#dampak" class="case-nav-sidebar-link" data-i18n="caseResults">Hasil pekerjaan</a>
+      </aside>
+
+      <!-- Main Column -->
+      <div class="case-main-content">
+
+        <!-- SECTION: KONTEKS PROYEK -->
+        <section id="konteks" class="case-content-section">
+          <h2 class="case-section-h2" data-i18n="caseConceptTitle">Latar Belakang Permasalahan</h2>
+          <p class="case-text-p" data-i18n="caseProblemBackgroundTextSibansar">
+            Distribusi bantuan sarana prasarana perkebunan kepada ratusan kelompok tani di seluruh Jawa Barat sebelumnya
+            dilakukan secara manual. Berkas proposal berbentuk dokumen cetak fisik yang dikirim langsung ke kantor,
+            sehingga memunculkan berbagai inefisiensi operasional.
+          </p>
+
+          <div class="case-problem-cards-row">
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-folder" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#2563EB"></rect><path d="M8.2 10h3.4l1 1h5.2v5.6a1 1 0 0 1-1 1H8.2a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1z" stroke="#fff" stroke-width="1.4" stroke-linejoin="round" fill="none"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseProblem1Title">Dokumen Fisik Tercecer</h3>
+              <p class="case-problem-desc" data-i18n="caseProblem1Text">
+                Tumpukan proposal kertas di meja kerja rentan hilang, rusak, atau terselip saat perpindahan tahap
+                verifikasi antar-seksi.
+              </p>
+            </div>
+
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-doc" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#4F46E5"></rect><path d="M9 8.6h6M9 12h6M9 15.4h4" stroke="#fff" stroke-width="1.6" stroke-linecap="round"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseProblem2Title">Disposisi Tidak Transparan</h3>
+              <p class="case-problem-desc" data-i18n="caseProblem2Text">
+                Kelompok tani kesulitan mengetahui apakah proposal sedang diperiksa operator, menunggu verifikasi
+                lapangan, atau disposisi Kepala Bidang.
+              </p>
+            </div>
+
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-warning" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#F59E0B"></rect><path d="M12 7.6l5.2 9H6.8l5.2-9z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" fill="none"></path><path d="M12 10.4v3.2" stroke="#fff" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="15" r="0.85" fill="#fff"></circle></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseProblem3Title">Duplikasi Penerima Bantuan</h3>
+              <p class="case-problem-desc" data-i18n="caseProblem3Text">
+                Sulit mendeteksi apakah suatu kelompok tani telah menerima jenis bantuan yang sama pada tahun anggaran
+                berjalan.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-callout-box">
+            <strong data-i18n="caseProjectGoalSibansar">Solusi Sistem Terpadu:</strong>
+            <span data-i18n="caseProjectGoalTextSibansar">Merancang dan membangun aplikasi SIBANSAR dengan mekanisme alur kerja berjenjang (multi-level approval), audit trail berkas, dan notifikasi otomatis agar proses penyaluran bantuan menjadi akuntabel dan transparan.</span>
+          </div>
+
+          </section>
+
+        <!-- SECTION: 01 ANALISIS KEBUTUHAN -->
+        <section id="analisis" class="case-content-section">
+          <span class="case-section-num-tag">01</span>
+          <h2 class="case-section-h2" data-i18n="caseAnalysisTitleSibansar">Analisis Kebutuhan Sistem</h2>
+          <p class="case-text-p" data-i18n="caseAnalysisDescSibansar">
+            Melakukan identifikasi masalah dan elisitasi kebutuhan melalui wawancara mendalam bersama operator seksi
+            sarpras dan observasi alur disposisi dokumen di Dinas Perkebunan Provinsi Jawa Barat.
+          </p>
+
+          <div class="case-tags-strip">
+            <span class="tag-clean" data-i18n="caseAnalysisTagBusinessProblem">Business Problem Analysis</span>
+            <span class="tag-clean" data-i18n="caseAnalysisTagRequirementsElicitation">Requirements Elicitation</span>
+            <span class="tag-clean" data-i18n="caseAnalysisTagPieces">PIECES Framework</span>
+            <span class="tag-clean" data-i18n="caseAnalysisTagFr">Functional Requirements (14 FR)</span>
+          </div>
+
+          <div class="case-callout-box">
+            <strong data-i18n="caseDesignRelationSibansar">Kaitan dengan rancangan:</strong>
+            <span data-i18n="caseDesignRelationTextSibansar">Hasil temuan masalah dokumen fisik tercecer menjadi landasan perumusan modul pengunggahan berkas digital mandiri dengan validasi ekstensi PDF/JPG dan pembatasan ukuran berkas.</span>
+          </div>
+
+          <div class="case-gallery-3col case-gallery-compact">
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sibansar-analisis/fig-rantai-nilai-porter.png" data-caption="Analisis Rantai Nilai Porter SIBANSAR">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sibansar-analisis/fig-rantai-nilai-porter.png" alt="Diagram rantai nilai porter pada studi kasus SIBANSAR" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Analisis Rantai Nilai Porter</div>
+                <div class="case-ui-sub">Pemetaan aktivitas utama dan pendukung untuk menemukan titik perbaikan proses layanan bantuan.</div>
+              </div>
+            </article>
+
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sibansar-analisis/pdf-p21-img01.png" data-caption="Fishbone/Ishikawa SIBANSAR">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sibansar-analisis/pdf-p21-img01.png" alt="Diagram fishbone ishikawa studi kasus SIBANSAR" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Analisis Akar Masalah (Ishikawa)</div>
+                <div class="case-ui-sub">Identifikasi faktor penyebab kendala pengelolaan bantuan dari sisi SDM, metode, data, dan dokumen.</div>
+              </div>
+            </article>
+
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sibansar-analisis/fig-five-whys-pengelolaan.png" data-caption="Analisis Five Whys Pengelolaan Bantuan SIBANSAR">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sibansar-analisis/fig-five-whys-pengelolaan.png" alt="Analisis five whys pada pengelolaan bantuan SIBANSAR" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Analisis Five Whys</div>
+                <div class="case-ui-sub">Pendalaman sebab-akibat untuk memastikan kebutuhan sistem menjawab akar persoalan utama.</div>
+              </div>
+            </article>
+          </div>
+          <!-- Role & Responsibility Table -->
+          <div class="table-scroll-hint">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            <span data-i18n="caseTableHintSibansar">Geser tabel ke samping untuk melihat detail peran & hak akses</span>
+          </div>
+          <div class="qa-table-wrap">
+            <table class="qa-table">
+              <thead>
+                <tr>
+                  <th data-i18n="caseActorRoleSibansar">Aktor (Peran)</th>
+                  <th data-i18n="caseResponsibilitySibansar">Tanggung Jawab Utama dalam Sistem</th>
+                  <th data-i18n="caseAccessRightsSibansar">Hak Akses (RBAC)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong data-i18n="caseRoleAdmin">Admin</strong></td>
+                  <td data-i18n="caseRoleAdminDesc">Manajemen akun pengguna, pemeliharaan master data sarpras, dan pengaturan hak akses.</td>
+                  <td><span class="tag-clean" data-i18n="caseRoleAccessFull">Full Access</span></td>
+                </tr>
+                <tr>
+                  <td><strong data-i18n="caseRoleFarmerGroup">Kelompok Tani</strong></td>
+                  <td data-i18n="caseRoleFarmerGroupDesc">Registrasi mandiri, submit proposal bantuan, upload syarat legalitas, tracking status pengajuan.</td>
+                  <td><span class="tag-clean" data-i18n="caseRoleAccessTracking">Pengajuan &amp; Tracking</span></td>
+                </tr>
+                <tr>
+                  <td><strong data-i18n="caseRoleOperatorDinas">Operator Dinas</strong></td>
+                  <td data-i18n="caseRoleOperatorDinasDesc">Verifikasi kelengkapan berkas fisik &amp; digital, validasi lapangan, dan pembuatan rekomendasi teknis.</td>
+                  <td><span class="tag-clean" data-i18n="caseRoleAccessVerification">Verifikasi &amp; Rekomendasi</span></td>
+                </tr>
+                <tr>
+                  <td><strong data-i18n="caseRoleKabid">Kepala Bidang (Kabid)</strong></td>
+                  <td data-i18n="caseRoleKabidDesc">Meninjau berkas rekomendasi, validasi final persetujuan/penolakan (approval/reject), monitoring dasbor.</td>
+                  <td><span class="tag-clean" data-i18n="caseRoleAccessApproval">Approval &amp; Monitoring</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION: 02 PEMODELAN PROSES BISNIS -->
+        <section id="proses-bisnis" class="case-content-section">
+          <span class="case-section-num-tag">02</span>
+          <h2 class="case-section-h2" data-i18n="caseBusinessTitleSibansar">Pemodelan Proses Bisnis (BPMN)</h2>
+          <p class="case-text-p" data-i18n="caseBusinessDescSibansar">
+            Memetakan proses bisnis lama (As-Is) yang lambat dan memakan waktu berhari-hari, kemudian merancang alur
+            proses bisnis baru (To-Be) menggunakan standar BPMN 2.0 untuk memastikan alur verifikasi berkas berjalan
+            otomatis dan berurutan.
+          </p>
+
+          <div class="case-tags-strip">
+            <span class="tag-clean" data-i18n="caseBpmnAsIs">BPMN As-Is (Manual)</span>
+            <span class="tag-clean" data-i18n="caseBpmnToBe">BPMN To-Be (Terpadu)</span>
+            <span class="tag-clean" data-i18n="caseBpmnRules">Business Rules &amp; Workflow</span>
+          </div>
+
+          <div class="case-callout-box">
+            <strong data-i18n="caseDesignRelationSibansar">Kaitan dengan rancangan:</strong>
+            <span data-i18n="caseDesignRelationTextSibansar">Memastikan alur verifikasi berkas terhubung secara sequential dari Operator hingga Kepala Bidang dengan status sistem yang otomatis diperbarui secara real-time.</span>
+          </div>
+
+                    <div class="case-gallery-2col case-gallery-compact">
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sibansar-analisis/pdf-p03-img01.png" data-caption="Proses Mengajukan Bantuan SIBANSAR">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sibansar-analisis/pdf-p03-img01.png" alt="Diagram proses mengajukan bantuan pada SIBANSAR" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Proses Mengajukan Bantuan</div>
+                <div class="case-ui-sub">Alur awal pengajuan bantuan oleh kelompok tani hingga berkas diterima sistem.</div>
+              </div>
+            </article>
+
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sibansar-analisis/pdf-p04-img01.png" data-caption="Proses Menerima dan Verifikasi Data SIBANSAR">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sibansar-analisis/pdf-p04-img01.png" alt="Diagram proses menerima dan verifikasi data SIBANSAR" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Proses Menerima dan Verifikasi Data</div>
+                <div class="case-ui-sub">Tahapan pemeriksaan data, validasi berjenjang, dan keputusan tindak lanjut pada sistem.</div>
+              </div>
+            </article>
+          </div>
+</section>
+
+        <!-- SECTION: 03 PERANCANGAN SISTEM -->
+        <section id="perancangan" class="case-content-section">
+          <span class="case-section-num-tag">03</span>
+          <h2 class="case-section-h2" data-i18n="caseDesignTitleSibansar">Perancangan Sistem & Basis Data (UML & ERD)</h2>
+          <p class="case-text-p" data-i18n="caseDesignDescSibansar">
+            Menyusun spesifikasi teknis mencakup Use Case Diagram untuk menggambarkan interaksi 4 aktor, Sequence
+            Diagram untuk memvalidasi alur pesan antar objek, serta Class Diagram relasi entitas basis data MySQL.
+          </p>
+
+          <div class="case-tags-strip">
+            <span class="tag-clean" data-i18n="caseDiagramUseCase">Use Case Diagram</span>
+            <span class="tag-clean" data-i18n="caseDiagramClass">Class Diagram (12 Entities)</span>
+            <span class="tag-clean" data-i18n="caseDiagramSequence">Sequence Diagram</span>
+            <span class="tag-clean">Enterprise Architect</span>
+          </div>
+
+          <!-- Diagram Preview Grid -->
+          <div class="case-diagram-inspector-card">
+            <div class="case-diagram-img-wrap open-lightbox-trigger" data-img="assets/diagrams/usecase-sibansar.png"
+              data-caption="Use Case Diagram - Interaksi 4 Aktor Sistem SIBANSAR">
+              <img src="assets/diagrams/usecase-sibansar.png" alt="Use Case Diagram SIBANSAR" />
+              <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+            </div>
+            <div class="case-diagram-caption-box">
+              <div>
+                <div class="case-diagram-caption-title" data-i18n="caseUseCaseDiagramTitleSibansar">Use Case Diagram (4 Aktor Utama)</div>
+                <div class="case-diagram-caption-sub" data-i18n="caseUseCaseDiagramSubSibansar">Memetakan 14 fungsi utama sistem ke masing-masing hak akses
+                  pengguna</div>
+              </div>
+              <span class="tag-clean">UML Use Case</span>
+            </div>
+          </div>
+
+          <div class="case-diagram-inspector-card">
+            <div class="case-diagram-img-wrap open-lightbox-trigger"
+              data-img="assets/diagrams/class-diagram-sibansar.png"
+              data-caption="Class Diagram - Struktur Data dan Relasi Entitas SIBANSAR">
+              <img src="assets/diagrams/class-diagram-sibansar.png" alt="Class Diagram SIBANSAR" />
+              <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+            </div>
+            <div class="case-diagram-caption-box">
+              <div>
+                <div class="case-diagram-caption-title" data-i18n="caseClassDiagramTitleSibansar">Class Diagram & Skema Relasional Basis Data</div>
+                <div class="case-diagram-caption-sub" data-i18n="caseClassDiagramSubSibansar">Struktur tabel proposal, pengguna, persyaratan berkas, disposisi,
+                  dan audit log</div>
+              </div>
+              <span class="tag-clean">UML Class Model</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: 04 IMPLEMENTASI APLIKASI -->
+        <section id="implementasi" class="case-content-section">
+          <span class="case-section-num-tag">04</span>
+          <h2 class="case-section-h2" data-i18n="caseImplementTitleSibansar">Implementasi Antarmuka Sistem Nyata</h2>
+          <p class="case-text-p" data-i18n="caseImplementDescSibansar">
+            Berikut adalah tangkapan layar antarmuka sistem web SIBANSAR yang telah selesai dibangun dan
+            diimplementasikan pada lingkungan Dinas Perkebunan Provinsi Jawa Barat. Seluruh antarmuka telah disesuaikan
+            dengan identitas resmi instansi.
+          </p>
+
+          <div class="case-slideshow-wrap">
+            <div class="case-slideshow-track" id="sibansarSlideTrack">
+
+              <!-- 1. Antarmuka Login (Disbun Hijau) -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sibansar-login.png"
+                data-caption="Antarmuka Login SIBANSAR - Identitas Hijau Dinas Perkebunan Jabar">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sibansar-login.png" alt="Login SIBANSAR" />
+                  <span class="case-ui-role-pill" data-i18n="caseAllUsers">Semua Pengguna</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseLoginUserTitle">Antarmuka Login User (Disbun Jabar)</div>
+                  <div class="case-ui-sub" data-i18n="caseLoginUserSub">Autentikasi aman multi-peran dengan identitas resmi Dinas Perkebunan</div>
+                </div>
+              </div>
+
+              <!-- 2. Antarmuka Register (Disbun Hijau) -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sibansar-register.png"
+                data-caption="Antarmuka Register Kelompok Tani SIBANSAR - Registrasi Mandiri">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sibansar-register.png" alt="Register SIBANSAR" />
+                  <span class="case-ui-role-pill" data-i18n="caseFarmerGroup">Kelompok Tani</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseRegisterTitle">Antarmuka Register Kelompok Tani</div>
+                  <div class="case-ui-sub" data-i18n="caseRegisterSub">Pendaftaran mandiri kelompok tani dengan validasi legalitas dan NIK</div>
+                </div>
+              </div>
+
+              <!-- 3. Dasbor Kabid -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sibansar-dashboard-kabid.png"
+                data-caption="Dasbor Kepala Bidang - Monitoring Ringkasan Keputusan & Approval">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sibansar-dashboard-kabid.png" alt="Dasbor Kabid SIBANSAR" />
+                  <span class="case-ui-role-pill" data-i18n="caseHeadOfDivision">Kepala Bidang</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseKabidTitle">Dasbor Kepala Bidang (Kabid)</div>
+                  <div class="case-ui-sub" data-i18n="caseKabidSub">Grafik ringkasan keputusan, jumlah menunggu approval, dan aksi cepat</div>
+                </div>
+              </div>
+
+              <!-- 4. Kelola Pengajuan -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sibansar-kelola-pengajuan.png"
+                data-caption="Halaman Kelola Pengajuan Bantuan - Tabel Rekapitulasi Berkas">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sibansar-kelola-pengajuan.png" alt="Kelola Pengajuan SIBANSAR" />
+                  <span class="case-ui-role-pill" data-i18n="caseOperatorKabid">Operator & Kabid</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseProposalTitle">Halaman Kelola Pengajuan Bantuan</div>
+                  <div class="case-ui-sub" data-i18n="caseProposalSub">Tabel rekapitulasi proposal masuk, filter status, dan disposisi berkas</div>
+                </div>
+              </div>
+
+              <!-- 5. Dasbor Operator -->
+              <div class="case-ui-card case-slide open-lightbox-trigger"
+                data-img="assets/implementasi/sibansar-dashboard-operator.png"
+                data-caption="Dasbor Operator Dinas - Pemeriksaan Berkas Fisik & Digital">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sibansar-dashboard-operator.png" alt="Dasbor Operator SIBANSAR" />
+                  <span class="case-ui-role-pill" data-i18n="caseOperatorDinas">Operator Dinas</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseOperatorTitle">Dasbor Operator Dinas</div>
+                  <div class="case-ui-sub" data-i18n="caseOperatorSub">Monitoring berkas proposal baru dan validasi persyaratan administrasi</div>
+                </div>
+              </div>
+
+              <!-- 6. Dasbor Petani -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sibansar-dashboard-petani.png"
+                data-caption="Dasbor Kelompok Tani - Pengajuan Mandiri & Pelacakan Status">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sibansar-dashboard-petani.png" alt="Dasbor Petani SIBANSAR" />
+                  <span class="case-ui-role-pill" data-i18n="caseFarmerGroup">Kelompok Tani</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseFarmerDashboardTitle">Dasbor Kelompok Tani</div>
+                  <div class="case-ui-sub" data-i18n="caseFarmerDashboardSub">Formulir pengajuan proposal mandiri dan pelacakan status bantuan</div>
+                </div>
+              </div>
+
+              <!-- 7. Kelola Laporan -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sibansar-kelola-laporan.png"
+                data-caption="Halaman Kelola Laporan - Rekapitulasi Penyaluran Bantuan Sarpras">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sibansar-kelola-laporan.png" alt="Kelola Laporan SIBANSAR" />
+                  <span class="case-ui-role-pill" data-i18n="casePlantationOffice">Dinas Perkebunan</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseReportTitle">Halaman Kelola Laporan</div>
+                  <div class="case-ui-sub" data-i18n="caseReportSub">Cetak berita acara serah terima dan rekapitulasi penyaluran bantuan sarpras</div>
+                </div>
+              </div>
+
+              <!-- 8. Pusat Notifikasi -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sibansar-notifikasi.png"
+                data-caption="Pusat Notifikasi Sistem - Update Real-Time Perubahan Status Berkas">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sibansar-notifikasi.png" alt="Pusat Notifikasi SIBANSAR" />
+                  <span class="case-ui-role-pill" data-i18n="caseAllUsers">Semua Pengguna</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseNotificationTitle">Pusat Notifikasi Real-Time</div>
+                  <div class="case-ui-sub" data-i18n="caseNotificationSub">Pemberitahuan otomatis saat proposal disetujui, ditolak, atau perlu revisi</div>
+                </div>
+              </div>
+
+            </div>
+            <button class="case-slide-nav prev" id="sibansarPrev" aria-label="Sebelumnya">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="case-slide-nav next" id="sibansarNext" aria-label="Berikutnya">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <div class="case-slide-dots" id="sibansarSlideDots"></div>
+          </div>
+        </section>
+
+        <!-- SECTION: 05 DOKUMENTASI & PENGUJIAN QA -->
+        <section id="pengujian" class="case-content-section">
+          <span class="case-section-num-tag">05</span>
+          <h2 class="case-section-h2" data-i18n="caseDocsQaTitleSibansar">Dokumentasi & Strategi Pengujian Mutu (QA Testing)</h2>
+          <p class="case-text-p" data-i18n="caseDocsQaDescSibansar">
+            Menjamin keandalan fungsionalitas, validasi input batas nilai (boundary), dan keamanan hak akses sistem
+            melalui pengujian <em>Boundary Value Analysis (BVA)</em> dan <em>Black Box Testing</em> terstruktur pada 7
+            modul utama sesuai Dokumen Pembangunan Perangkat Lunak (DPPL) / Bab V Laporan Tugas Akhir.
+          </p>
+
+          <!-- Banner Tombol Bukti Uji BVA Resmi -->
+          <div class="case-bva-banner">
+            <div>
+              <div class="case-bva-banner-title">
+                <span data-i18n="caseBvaEvidenceTitleSibansar">Dokumen Bukti Pengujian Boundary Value Analysis (BVA)</span>
+                <span class="case-bva-badge" data-i18n="caseBvaBadge">28 Test Cases</span>
+              </div>
+              <div class="case-bva-banner-sub" data-i18n="caseBvaEvidenceSubSibansar">
+                Laporan Tugas Akhir Bab V: Pengujian Sistem Informasi SIBANSAR (Tabel V.2 s/d Tabel V.8) &middot; ULBI & Dinas
+                Perkebunan Jawa Barat.
+              </div>
+            </div>
+            <a href="assets/BVA_SIBANSAR.pdf" target="_blank" class="case-bva-btn"
+              title="Buka Dokumen Resmi Laporan Tugas Akhir SIBANSAR (PDF)">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span data-i18n="caseBvaEvidenceBtnSibansar">Lihat Bukti Dokumentasi & QA (PDF) ↗</span>
+            </a>
+          </div>
+
+          <div class="table-scroll-hint">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            <span data-i18n="caseTableHintFullSibansar">Geser tabel ke samping untuk melihat seluruh parameter pengujian</span>
+          </div>
+
+          <div class="qa-table-wrap">
+            <table class="qa-table">
+              <thead>
+                <tr>
+                  <th data-i18n="caseBvaHeaderId">ID Test Case</th>
+                  <th data-i18n="caseBvaHeaderModule">Modul / Fitur</th>
+                  <th data-i18n="caseBvaHeaderScenario">Skenario &amp; Parameter Boundary (BVA)</th>
+                  <th data-i18n="caseBvaHeaderExpected">Hasil yang Diharapkan</th>
+                  <th data-i18n="caseBvaHeaderStatus">Status QA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code data-i18n="caseBvaRow1Id">PDHUPL-1.a</code></td>
+                  <td><strong data-i18n="caseBvaRow1Module">BVA Register</strong></td>
+                  <td data-i18n="caseBvaRow1Scenario">Password &lt; batas minimum (Password="passwor", 7 karakter).</td>
+                  <td data-i18n="caseBvaRow1Expected">Sistem menampilkan pesan error "Password minimal 8 karakter" dan pendaftaran ditolak.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow1Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow2Id">PDHUPL-1.c</code></td>
+                  <td><strong data-i18n="caseBvaRow2Module">BVA Register</strong></td>
+                  <td data-i18n="caseBvaRow2Scenario">Kode Kelompok &gt; batas maksimal (Input kode kelompok 51 karakter).</td>
+                  <td data-i18n="caseBvaRow2Expected">Sistem menampilkan pesan error "Kode Kelompok maksimal 50 karakter" dan pendaftaran gagal.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow2Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow3Id">PDHUPL-2.a</code></td>
+                  <td><strong data-i18n="caseBvaRow3Module">BVA Login</strong></td>
+                  <td data-i18n="caseBvaRow3Scenario">Email &lt; batas minimum format (Email="a@b", 3 karakter).</td>
+                  <td data-i18n="caseBvaRow3Expected">Sistem menampilkan pesan "Format email tidak valid" dan proses autentikasi gagal.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow3Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow4Id">PDHUPL-2.c</code></td>
+                  <td><strong data-i18n="caseBvaRow4Module">BVA Login (RBAC)</strong></td>
+                  <td data-i18n="caseBvaRow4Scenario">Email dan password valid (operator@disbun.test).</td>
+                  <td data-i18n="caseBvaRow4Expected">Sistem berhasil login dan otomatis mengarahkan ke dasbor peran pengguna masing-masing.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow4Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow5Id">PDHUPL-3.b</code></td>
+                  <td><strong data-i18n="caseBvaRow5Module">BVA Kelola User</strong></td>
+                  <td data-i18n="caseBvaRow5Scenario">Nama user &gt; batas maksimal (Input nama 51 karakter).</td>
+                  <td data-i18n="caseBvaRow5Expected">Sistem menampilkan pesan "Nama maksimal 50 karakter" dan penambahan user gagal.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow5Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow6Id">PDHUPL-4.b</code></td>
+                  <td><strong data-i18n="caseBvaRow6Module">BVA Pengajuan</strong></td>
+                  <td data-i18n="caseBvaRow6Scenario">Jumlah diminta &lt; batas minimum (Input jumlah = 0 unit).</td>
+                  <td data-i18n="caseBvaRow6Expected">Sistem menampilkan pesan "Jumlah diminta minimal 1" dan pembuatan pengajuan gagal.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow6Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow7Id">PDHUPL-4.c</code></td>
+                  <td><strong data-i18n="caseBvaRow7Module">BVA Pengajuan</strong></td>
+                  <td data-i18n="caseBvaRow7Scenario">Jumlah diminta &gt; batas maksimal (Input jumlah = 10001 unit).</td>
+                  <td data-i18n="caseBvaRow7Expected">Sistem menampilkan pesan "Jumlah diminta maksimal 10000 unit" dan pengajuan ditolak.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow7Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow8Id">PDHUPL-4.d</code></td>
+                  <td><strong data-i18n="caseBvaRow8Module">BVA Upload Surat</strong></td>
+                  <td data-i18n="caseBvaRow8Scenario">Ukuran file surat proposal &gt; batas maksimal (Upload berat.pdf ukuran 2049 KB).</td>
+                  <td data-i18n="caseBvaRow8Expected">Sistem memblokir unggahan dengan pesan "Ukuran file maksimal 2048 KB".</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow8Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow9Id">PDHUPL-5.a</code></td>
+                  <td><strong data-i18n="caseBvaRow9Module">BVA Verifikasi</strong></td>
+                  <td data-i18n="caseBvaRow9Scenario">Alasan penolakan &gt; batas maksimal (Input alasan penolakan 1001 karakter).</td>
+                  <td data-i18n="caseBvaRow9Expected">Sistem menampilkan pesan "Alasan penolakan maksimal 1000 karakter" dan verifikasi gagal.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow9Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow10Id">PDHUPL-5.c</code></td>
+                  <td><strong data-i18n="caseBvaRow10Module">BVA Upload BAST</strong></td>
+                  <td data-i18n="caseBvaRow10Scenario">Ukuran file BAST &gt; batas maksimal (Upload file ukuran 5121 KB).</td>
+                  <td data-i18n="caseBvaRow10Expected">Sistem menampilkan pesan "Ukuran file BAST maksimal 5120 KB" dan unggah BAST gagal.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow10Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow11Id">PDHUPL-6.a</code></td>
+                  <td><strong data-i18n="caseBvaRow11Module">BVA Approval Kabid</strong></td>
+                  <td data-i18n="caseBvaRow11Scenario">Kepala Bidang menekan button Setujui Pengajuan (semua parameter valid).</td>
+                  <td data-i18n="caseBvaRow11Expected">Sistem berhasil mengubah status pengajuan menjadi "Disetujui Kabid".</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow11Status">&#10003; Lolos Uji</span></td>
+                </tr>
+                <tr>
+                  <td><code data-i18n="caseBvaRow12Id">PDHUPL-7.a</code></td>
+                  <td><strong data-i18n="caseBvaRow12Module">BVA Filter Laporan</strong></td>
+                  <td data-i18n="caseBvaRow12Scenario">Tanggal Akhir &lt; Tanggal Awal (Contoh: Awal 31/01/2025, Akhir 30/01/2025).</td>
+                  <td data-i18n="caseBvaRow12Expected">Sistem menampilkan pesan "Tanggal akhir harus lebih besar atau sama dengan tanggal awal".</td>
+                  <td><span class="status-badge-pass" data-i18n="caseBvaRow12Status">&#10003; Lolos Uji</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION: HASIL & DAMPAK -->
+        <section id="dampak" class="case-content-section">
+          <h2 class="case-section-h2" data-i18n="caseImpactTitleSibansar">Work Results & Real Impact</h2>
+          <p class="case-text-p" data-i18n="caseImpactSummarySibansar">
+            The SIBANSAR implementation significantly resolved the operational challenges of managing physical infrastructure
+            assistance documents at the West Java Provincial Plantation Office.
+          </p>
+
+          <div class="case-problem-cards-row">
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-bolt" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#16A34A"></rect><path d="M13.2 7.7L9.7 13h3l-1.6 3.8 5-6h-3l1.1-3.1z" fill="#fff"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseImpact1TitleSibansar">90% Verification Efficiency</h3>
+              <p class="case-problem-desc" data-i18n="caseImpact1TextSibansar">
+                Proposal processing and completeness verification time was cut from 5&ndash;7 working days to just minutes through the web application.
+              </p>
+            </div>
+
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-lock" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#0F766E"></rect><rect x="9" y="12" width="6" height="5" rx="1" stroke="#fff" stroke-width="1.5" fill="none"></rect><path d="M10.2 12V10.7a1.8 1.8 0 0 1 3.6 0V12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseImpact2TitleSibansar">Zero Document Loss</h3>
+              <p class="case-problem-desc" data-i18n="caseImpact2TextSibansar">
+                All proposal documents are digitally archived in a centralized database, eliminating the risk of physical files being lost or damaged.
+              </p>
+            </div>
+
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-chart-up" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#0EA5E9"></rect><path d="M8 15.5l3-3 2 2 3-4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><path d="M8 15.5h8" stroke="#fff" stroke-width="1.2" stroke-linecap="round"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseImpact3TitleSibansar">Distribution Transparency</h3>
+              <p class="case-problem-desc" data-i18n="caseImpact3TextSibansar">
+                Agency leaders can monitor the distribution of assistance in real time, and farmer groups gain certainty about the status of their proposals.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <div class="case-bottom-nav-box">
+          <a href="index.html#proyek" class="btn-case-prev">&larr; Kembali ke Semua Proyek</a>
+          <a href="sipostam.html" class="btn-case-next">Proyek Selanjutnya: SIPOSTAM &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX IMAGE ZOOM MODAL -->
+  <div class="lightbox-overlay" id="lightboxOverlay" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="modal-close-btn" id="lightboxCloseBtn"
+        style="position: absolute; top: -42px; right: 0; background: #ffffff; color: #000;"
+        aria-label="Tutup gambar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <img src="" alt="Perbesar Gambar" id="lightboxImage" class="lightbox-image" />
+      <div id="lightboxCaption" class="lightbox-caption">Judul Gambar</div>
+    </div>
+  </div>
+
+  <div class="site-footer-bar">
+    <div class="container footer-bar-inner">
+      <div class="footer-brand-block">
+        <div class="footer-copyright">&copy; 2026 Muhammad Reyhan Fadina R. Hak cipta dilindungi.</div>
+      </div>
+
+      <div class="footer-role-text">Junior System Analyst &amp; QA Engineer</div>
+    </div>
+  </div>
+
+  <!-- Script for Lightbox & Smooth Scrolling -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lightbox = document.getElementById('lightboxOverlay');
+      const lightboxImg = document.getElementById('lightboxImage');
+      const lightboxCap = document.getElementById('lightboxCaption');
+      const closeBtn = document.getElementById('lightboxCloseBtn');
+
+      document.querySelectorAll('.open-lightbox-trigger').forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          if (window.__isCaseSwiping) return;
+          const src = trigger.getAttribute('data-img');
+          const cap = trigger.getAttribute('data-caption');
+          if (src) {
+            lightboxImg.src = src;
+            lightboxCap.textContent = cap || 'Detail Gambar';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      if (closeBtn && lightbox) {
+        closeBtn.addEventListener('click', () => {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox) {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+
+      // Sidebar scroll spy with instant click highlight & bottom-detection
+      const sections = document.querySelectorAll('.case-content-section');
+      const navLinks = document.querySelectorAll('.case-nav-sidebar-link');
+      const navSidebar = document.querySelector('.case-nav-sidebar');
+      let scrollTimeout;
+      let clickLocked = false;
+      let lockTimer = null;
+
+      function setActiveLink(activeId) {
+        navLinks.forEach(link => {
+          const isMatch = link.getAttribute('href') === `#${activeId}`;
+          link.classList.toggle('active', isMatch);
+          if (isMatch && navSidebar && window.innerWidth <= 900) {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+              const leftPos = link.offsetLeft - (navSidebar.clientWidth / 2) + (link.clientWidth / 2);
+              navSidebar.scrollTo({ left: leftPos, behavior: 'smooth' });
+            }, 60);
+          }
+        });
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          const href = this.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            const targetId = href.slice(1);
+            clickLocked = true;
+            clearTimeout(lockTimer);
+            setActiveLink(targetId);
+            lockTimer = setTimeout(() => {
+              clickLocked = false;
+            }, 900);
+          }
+        });
+      });
+
+      function updateSidebarSpy() {
+        if (clickLocked) return;
+
+        // Check if user is at or near the bottom of the page
+        const atBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 90);
+        if (atBottom && sections.length > 0) {
+          const lastId = sections[sections.length - 1].getAttribute('id');
+          setActiveLink(lastId);
+          return;
+        }
+
+        const scrollPos = window.scrollY + 160;
+        let current = '';
+
+        sections.forEach(s => {
+          const top = s.getBoundingClientRect().top + window.scrollY;
+          if (scrollPos >= top) {
+            current = s.getAttribute('id');
+          }
+        });
+
+        if (current) {
+          setActiveLink(current);
+        }
+      }
+
+      window.addEventListener('scroll', updateSidebarSpy, { passive: true });
+      updateSidebarSpy();
+
+    });
+  </script>
+
+  <script src="js/main.js?v=2.13" charset="UTF-8"></script>
+
+  <!-- Case Study Auto Slideshow with Touch Swipe & Exact Pixel Translation -->
+  <script>
+    (function () {
+      function initSlide(trackId, dotsId, prevId, nextId) {
+        const track = document.getElementById(trackId);
+        const dotsContainer = document.getElementById(dotsId);
+        const prevBtn = document.getElementById(prevId);
+        const nextBtn = document.getElementById(nextId);
+        if (!track || !dotsContainer || !prevBtn || !nextBtn) return;
+
+        const slides = Array.from(track.querySelectorAll('.case-slide'));
+        if (slides.length === 0) return;
+
+        let current = 0;
+        let autoTimer = null;
+
+        dotsContainer.innerHTML = '';
+        slides.forEach(function (_, i) {
+          var dot = document.createElement('button');
+          dot.className = 'case-slide-dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+          dot.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            goTo(i);
+            resetAuto();
+          });
+          dotsContainer.appendChild(dot);
+        });
+        var dots = Array.from(dotsContainer.querySelectorAll('.case-slide-dot'));
+
+        function getSlideWidth() {
+          return track.parentElement.getBoundingClientRect().width;
+        }
+
+        function goTo(idx) {
+          current = (idx + slides.length) % slides.length;
+          const w = getSlideWidth();
+          track.style.transform = 'translateX(-' + (current * w) + 'px)';
+          dots.forEach(function (d, i) { d.classList.toggle('active', i === current); });
+        }
+
+        function next() { goTo(current + 1); resetAuto(); }
+        function prev() { goTo(current - 1); resetAuto(); }
+
+        function startAuto() {
+          if (!autoTimer) autoTimer = setInterval(next, 4500);
+        }
+        function stopAuto() { clearInterval(autoTimer); autoTimer = null; }
+        function resetAuto() { stopAuto(); startAuto(); }
+
+        prevBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          prev();
+        });
+        nextBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          next();
+        });
+
+        track.addEventListener('mouseenter', stopAuto);
+        track.addEventListener('mouseleave', startAuto);
+
+        // Mobile touch swipe support
+        let startX = 0;
+        let currentX = 0;
+        let hasSwiped = false;
+
+        track.addEventListener('touchstart', function (e) {
+          startX = e.touches[0].clientX;
+          currentX = startX;
+          hasSwiped = false;
+          stopAuto();
+        }, { passive: true });
+
+        track.addEventListener('touchmove', function (e) {
+          currentX = e.touches[0].clientX;
+          if (Math.abs(startX - currentX) > 12) {
+            hasSwiped = true;
+            window.__isCaseSwiping = true;
+          }
+        }, { passive: true });
+
+        track.addEventListener('touchend', function () {
+          const diff = startX - currentX;
+          if (hasSwiped && Math.abs(diff) > 40) {
+            if (diff > 0) next();
+            else prev();
+          } else {
+            startAuto();
+          }
+          setTimeout(function () {
+            window.__isCaseSwiping = false;
+          }, 180);
+        }, { passive: true });
+
+        window.addEventListener('resize', function () {
+          goTo(current);
+        });
+
+        goTo(0);
+        startAuto();
+      }
+
+      initSlide('sibansarSlideTrack', 'sibansarSlideDots', 'sibansarPrev', 'sibansarNext');
+    })();
+  </script>
+</body>
+
+</html>
+
+
+
+
+

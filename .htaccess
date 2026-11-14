@@ -1,0 +1,28 @@
+# ==============================================================================
+# Force UTF-8 Encoding for all web assets
+# Prevents broken symbols, mojibake, and encoding mismatches on web servers
+# ==============================================================================
+
+AddDefaultCharset UTF-8
+
+<IfModule mod_mime.c>
+    AddCharset UTF-8 .html
+    AddCharset UTF-8 .css
+    AddCharset UTF-8 .js
+    AddCharset UTF-8 .json
+    AddCharset UTF-8 .svg
+    AddCharset UTF-8 .xml
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|htm)$">
+        Header set Content-Type "text/html; charset=UTF-8"
+    </FilesMatch>
+    <FilesMatch "\.(css)$">
+        Header set Content-Type "text/css; charset=UTF-8"
+    </FilesMatch>
+    <FilesMatch "\.(js)$">
+        Header set Content-Type "application/javascript; charset=UTF-8"
+    </FilesMatch>
+</IfModule>
+

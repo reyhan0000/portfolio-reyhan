@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studi Kasus SIPOSTAM | Muhammad Reyhan Fadina R</title>
+  
+  <meta name="description" content="Studi kasus perancangan dan implementasi SIPOSTAM - Sistem Informasi Point of Sales Toko Alam Tembakau oleh Muhammad Reyhan Fadina R.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2.9">
+</head>
+<body class="case-study-page">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html#hero" class="brand-link">
+        <span class="brand-name">Reyhan Fadinar.</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navLinks">
+          <li><a href="index.html#tentang" class="nav-item-link" data-i18n="about">Tentang</a></li>
+          <li><a href="index.html#pengalaman" class="nav-item-link" data-i18n="experience">Pengalaman</a></li>
+          <li><a href="index.html#proyek" class="nav-item-link active" data-i18n="projects">Proyek</a></li>
+          <li><a href="index.html#keahlian" class="nav-item-link" data-i18n="skills">Core Skills</a></li>
+          <li><a href="index.html#pencapaian" class="nav-item-link" data-i18n="achievements">Pencapaian</a></li>
+          <li><a href="index.html#sertifikasi" class="nav-item-link" data-i18n="certifications">Sertifikasi</a></li>
+          <li><a href="index.html#kontak" class="nav-item-link" data-i18n="contact">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language switcher">
+          <button class="lang-btn active" type="button" data-lang="id">ID</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+        <a href="assets/CV_MuhammadReyhanFadinar_QA_2026.pdf" download="CV_MuhammadReyhanFadinar_QA_2026.pdf" target="_blank" class="btn-nav-cv" title="Unduh CV Muhammad Reyhan Fadina R (PDF)">CV</a>
+        <button type="button" class="mobile-menu-btn" id="mobileToggle" aria-label="Menu Navigasi">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Breadcrumb -->
+    <div class="case-breadcrumb-nav">
+      <a href="index.html#proyek" data-i18n="caseAllProjectsArrow">&larr; Semua proyek</a>
+      <span>/</span>
+      <span data-i18n="caseProjectSipostam">SIPOSTAM</span>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="case-hero-banner">
+      <div class="case-hero-media">
+        <div class="project-visual-stack" aria-hidden="true">
+          <img src="assets/implementasi/sipostam-dashboard-admin.png" alt="" class="mockup-sheet sheet-back" loading="lazy" />
+          <img src="assets/implementasi/sipostam-kelola-produk.png" alt="" class="mockup-sheet sheet-mid" loading="lazy" />
+          <img src="assets/implementasi/sipostam-transaksi-penjualan.png" alt="" class="mockup-sheet sheet-front" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="case-hero-title-box">
+        <div class="case-hero-logo-row">
+          <div class="case-hero-logo">
+            <svg class="case-hero-logo-img" viewBox="0 0 64 64" role="img" aria-label="Logo Toko Alam Tembakau" aria-hidden="true">
+              <rect x="4" y="4" width="56" height="56" rx="14" fill="#EAF7EE"></rect>
+              <path d="M17 39C17 27 25.5 18 39 18C42.5 18 46.2 19.1 49.5 21.2C45.7 22.4 42.3 25.9 40.2 30.3C38.2 34.5 37.5 40.2 37.3 46.1C33.4 46.1 29.9 45 27.2 42.9C22.8 39.8 19.7 38.2 17 39Z" fill="#1F7A3A"></path>
+              <path d="M23 26C28.8 27.9 31.9 32.2 31.9 38.4" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"></path>
+              <circle cx="34.7" cy="20.1" r="2.6" fill="#F4CB5C"></circle>
+              <path d="M24.5 42L39.5 27.2" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.9"></path>
+            </svg>
+          </div>
+          <h1 class="case-hero-h1" data-i18n="caseHeroTitleSipostam">SIPOSTAM &mdash; Sistem Informasi Point of Sales Toko Alam Tembakau</h1>
+        </div>
+        <p class="case-hero-desc" data-i18n="caseHeroDescSipostam">
+          Sistem kasir cepat berbasis web terpadu dengan sinkronisasi inventori stok otomatis, modul pembelian supplier, dan analitik laporan laba/rugi harian.
+        </p>
+
+        <!-- Official Credential Documents Strip -->
+        <div class="case-hero-docs-strip">
+          <span class="case-hero-docs-label" data-i18n="caseOfficialCredentials">Kredensial Resmi:</span>
+          <a href="assets/BLACKBOX_SIPOSTAM.pdf" target="_blank" class="case-hero-doc-pill" title="Open Official Black Box Test Document (PDF)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            <span data-i18n="caseDocsQaBtnSipostam">Dokumen Uji Black Box Resmi (PDF) ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metadata Strip -->
+    <div class="case-meta-grid">
+      <div class="case-meta-cell">
+        <span data-i18n="caseActivity">Kegiatan</span>
+        <strong data-i18n="caseActivityValueSipostam">Proyek Akademik II (Scrum)</strong>
+      </div>
+      <div class="case-meta-cell">
+        <span data-i18n="caseInstitution">Instansi / Klien</span>
+        <strong data-i18n="caseInstitutionValueSipostam">Toko Alam Tembakau</strong>
+      </div>
+      <div class="case-meta-cell">
+        <span data-i18n="caseRole">Peran Saya</span>
+        <strong data-i18n="caseRoleValueSipostam">System Analyst, QA &amp; Web Dev</strong>
+      </div>
+      <div class="case-meta-cell">
+        <span data-i18n="casePeriod">Periode</span>
+        <strong data-i18n="casePeriodValueSipostam">Februari &ndash; Juli 2025</strong>
+      </div>
+    </div>
+
+    <!-- Tools Strip -->
+    <div class="case-tools-strip">
+      <span class="case-tools-tag" data-i18n="caseTools">Tools:</span>
+      <span class="tool-chip"><img src="assets/icons/scrum.svg" alt="Agile Scrum" class="tool-chip-icon" /> Agile Scrum Framework</span>
+      <span class="tool-chip"><img src="assets/icons/laravel.svg" alt="Laravel" class="tool-chip-icon" /> Laravel MVC</span>
+      <span class="tool-chip"><img src="assets/icons/mysql.svg" alt="MySQL" class="tool-chip-icon" /> MySQL Database</span>
+      <span class="tool-chip"><img src="assets/icons/postman.svg" alt="Postman" class="tool-chip-icon" /> Postman</span>
+      <span class="tool-chip"><img src="assets/icons/vscode.svg" alt="VS Code" class="tool-chip-icon" /> VS Code</span>
+      <span class="tool-chip"><img src="assets/icons/testing.svg" alt="Black Box Testing" class="tool-chip-icon" /> Black Box Testing</span>
+      <span class="tool-chip"><img src="assets/icons/git.svg" alt="Git" class="tool-chip-icon" /> Git &amp; <img src="assets/icons/github.svg" alt="GitHub" class="tool-chip-icon" style="margin-left:2px;" /> GitHub</span>
+      <span class="tool-chip"><img src="assets/icons/printer.svg" alt="POS Printer" class="tool-chip-icon" /> POS Printer ESC/POS</span>
+    </div>
+
+    <!-- Metrics Grid -->
+    <div class="case-metrics-grid">
+      <div class="case-metric-box">
+        <span class="case-metric-num">10</span>
+        <span class="case-metric-label">Functional requirements</span>
+      </div>
+      <div class="case-metric-box">
+        <span class="case-metric-num">2</span>
+        <span class="case-metric-label">Hak akses peran (Owner & Kasir)</span>
+      </div>
+      <div class="case-metric-box">
+        <span class="case-metric-num">8</span>
+        <span class="case-metric-label">Entitas basis data (ERD)</span>
+      </div>
+      <div class="case-metric-box">
+        <span class="case-metric-num">100%</span>
+        <span class="case-metric-label">Pengujian kasir & stok lolos</span>
+      </div>
+    </div>
+
+    <!-- Main Content Layout with Sticky Sidebar -->
+    <div class="case-study-body-grid">
+      
+      <!-- Sticky Sidebar -->
+      <aside class="case-nav-sidebar">
+        <div class="case-nav-sidebar-title" data-i18n="caseInsideStudy">DI DALAM STUDI KASUS</div>
+        <a href="#konteks" class="case-nav-sidebar-link active" data-i18n="caseProjectContext">Konteks proyek</a>
+        <a href="#analisis" class="case-nav-sidebar-link" data-i18n="caseNeedsAnalysis">01 Analisis Kebutuhan</a>
+        <a href="#proses-bisnis" class="case-nav-sidebar-link" data-i18n="caseSidebarProcessSipostam">02 Alur Kasir & Inventori</a>
+        <a href="#perancangan" class="case-nav-sidebar-link" data-i18n="caseSystemDesign">03 Perancangan Sistem</a>
+        <a href="#implementasi" class="case-nav-sidebar-link" data-i18n="caseImplementation">04 Implementasi Aplikasi</a>
+        <a href="#pengujian" class="case-nav-sidebar-link" data-i18n="caseTestingDoc">05 Dokumentasi & QA</a>
+        <a href="#dampak" class="case-nav-sidebar-link" data-i18n="caseResults">Hasil pekerjaan</a>
+      </aside>
+
+      <!-- Main Column -->
+      <div class="case-main-content">
+        
+        <!-- SECTION: KONTEKS PROYEK -->
+        <section id="konteks" class="case-content-section">
+          <h2 class="case-section-h2" data-i18n="caseProblemBackgroundSipostam">Latar Belakang Permasalahan Retail</h2>
+          <p class="case-text-p" data-i18n="caseProblemBackgroundTextSipostam">
+            Toko Alam Tembakau melayani transaksi penjualan produk tembakau olahan, rokok, cengkeh, papir, dan aksesoris lainnya. Sebelumnya, seluruh aktivitas transaksi dicatat secara konvensional pada nota kertas manual dan buku kas harian.
+          </p>
+
+          <div class="case-problem-cards-row">
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-clock" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#EC4899"></rect><circle cx="12" cy="12" r="4.6" stroke="#fff" stroke-width="1.5" fill="none"></circle><path d="M12 9.7v2.7l1.8 1.1" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseProblem1TitleSipostam">Antrean Kasir Lambat</h3>
+              <p class="case-problem-desc" data-i18n="caseProblem1TextSipostam">
+                Perhitungan total belanja menggunakan kalkulator fisik rawan salah hitung saat jam sibuk toko, memperlambat pelayanan kasir.
+              </p>
+            </div>
+
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-chart-down" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#E11D48"></rect><path d="M8 10.2l3 3 2-2 3 4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"></path><path d="M8 15.5h8" stroke="#fff" stroke-width="1.2" stroke-linecap="round"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseProblem2TitleSipostam">Selisih Stok Fisik</h3>
+              <p class="case-problem-desc" data-i18n="caseProblem2TextSipostam">
+                Tidak adanya kartu stok otomatis mengakibatkan jumlah fisik barang di etalase kerap berbeda dengan catatan buku.
+              </p>
+            </div>
+
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-bar" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#6366F1"></rect><path d="M9 15.6V12.4M12 15.6V10.4M15 15.6V13.4" stroke="#fff" stroke-width="1.7" stroke-linecap="round"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseProblem3TitleSipostam">Rekap Laba Rugi Manual</h3>
+              <p class="case-problem-desc" data-i18n="caseProblem3TextSipostam">
+                Pemilik toko harus menghitung nota fisik satu per satu setiap malam untuk mengetahui total omset kotor dan laba bersih harian.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-callout-box">
+            <strong data-i18n="caseProjectGoalSipostam">Solusi Sistem:</strong>
+            <span data-i18n="caseProjectGoalTextSipostam">Membangun aplikasi web POS terpadu dengan antarmuka kasir cepat (shortcut keyboard), auto-deduct inventori stok, pencatatan mutasi barang supplier, dan dashboard analitik laba rugi otomatis.</span>
+          </div>
+        </section>
+
+        <!-- SECTION: 01 ANALISIS KEBUTUHAN -->
+        <section id="analisis" class="case-content-section">
+          <span class="case-section-num-tag">01</span>
+          <h2 class="case-section-h2" data-i18n="caseAnalysisTitleSipostam">Analisis Kebutuhan & Pendekatan Scrum</h2>
+          <p class="case-text-p" data-i18n="caseAnalysisDescSipostam">
+            Pengembangan proyek dilakukan menggunakan metodologi <strong>Agile Scrum</strong> melalui tahapan sprint planning, perumusan user stories, dan evaluasi sprint review bersama pemilik toko untuk memastikan kebutuhan transaksi kasir terpenuhi dengan optimal.
+          </p>
+
+          <div class="case-tags-strip">
+            <span class="tag-clean">Agile Scrum Methodology</span>
+            <span class="tag-clean">User Stories Elicitation</span>
+            <span class="tag-clean">Product Backlog Prioritization</span>
+            <span class="tag-clean">Sprint Review</span>
+          </div>
+
+          <div class="case-callout-box">
+            <strong data-i18n="caseDesignRelationSipostam">Kaitan dengan rancangan:</strong>
+            <span data-i18n="caseDesignRelationTextSipostam">Pemilik toko menginginkan alur kasir yang seringkas mungkin tanpa reload halaman, sehingga modul kasir dirancang dengan teknologi AJAX / JavaScript agar penambahan item ke keranjang belanja bersifat instan.</span>
+          </div>
+
+          <div class="case-gallery-3col case-gallery-compact">
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sipostam-analisis/fig-rantai-nilai-porter.png" data-caption="Analisis Rantai Nilai Porter SIPOSTAM">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sipostam-analisis/fig-rantai-nilai-porter.png" alt="Diagram rantai nilai porter studi kasus SIPOSTAM" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Analisis Rantai Nilai Porter</div>
+                <div class="case-ui-sub">Pemetaan aktivitas utama dan aktivitas pendukung yang membentuk nilai pada proses bisnis SIPOSTAM.</div>
+              </div>
+            </article>
+
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sipostam-analisis/pdf-p15-img01.png" data-caption="Fishbone Analisis Kendala SIPOSTAM">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sipostam-analisis/pdf-p15-img01.png" alt="Diagram fishbone analisis masalah SIPOSTAM" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Analisis Akar Masalah (Fishbone)</div>
+                <div class="case-ui-sub">Identifikasi penyebab lambatnya proses transaksi dari sisi metode, media, dan alat kerja.</div>
+              </div>
+            </article>
+
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sipostam-analisis/pdf-p22-img01.png" data-caption="Struktur Menu Sistem SIPOSTAM">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sipostam-analisis/pdf-p22-img01.png" alt="Struktur menu dan modul aplikasi SIPOSTAM" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Struktur Fitur Aplikasi</div>
+                <div class="case-ui-sub">Pemetaan modul utama sistem sebagai dasar perumusan kebutuhan fungsional.</div>
+              </div>
+            </article>
+          </div>
+          <!-- Role Table -->
+          <div class="table-scroll-hint">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            <span data-i18n="caseTableHintSipostam">Geser tabel ke samping untuk melihat detail wewenang & hak akses</span>
+          </div>
+          <div class="qa-table-wrap">
+            <table class="qa-table">
+              <thead>
+                <tr>
+                  <th data-i18n="caseUserRoleHeaderSipostam">Peran Pengguna</th>
+                  <th data-i18n="caseAuthorityHeaderSipostam">Wewenang & Tanggung Jawab dalam Sistem</th>
+                  <th data-i18n="caseAccessLevelHeaderSipostam">Tingkat Akses</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Pemilik Toko (Owner / Admin)</strong></td>
+                  <td>Melihat dashboard pendapatan real-time, laporan laba/rugi, kelola master produk & harga, transaksi pembelian supplier, dan manajemen akun kasir.</td>
+                  <td><span class="tag-clean">Full Access & Analytics</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Kasir Toko</strong></td>
+                  <td>Melakukan input transaksi belanja cepat, cetak struk nota, cek ketersediaan stok produk, dan rekap penutupan kasir shift harian.</td>
+                  <td><span class="tag-clean">POS Kasir & Struk</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION: 02 ALUR KASIR & INVENTORI -->
+        <section id="proses-bisnis" class="case-content-section">
+          <span class="case-section-num-tag">02</span>
+          <h2 class="case-section-h2" data-i18n="caseBusinessTitleSipostam">Alur Proses Bisnis Transaksi & Inventori Otomatis</h2>
+          <p class="case-text-p" data-i18n="caseBusinessDescSipostam">
+            Merancang alur proses transaksi POS di mana setiap kali kasir menyelesaikan transaksi pembayaran dan mencetak struk belanja, kuantitas stok barang di database otomatis terpotong sesuai unit yang dibeli (stock movement).
+          </p>
+
+          <div class="case-tags-strip">
+            <span class="tag-clean">Alur Kasir Cepat</span>
+            <span class="tag-clean">Auto Stock Deduction</span>
+            <span class="tag-clean">Pencatatan Pembelian Supplier</span>
+          </div>
+
+          <div class="case-callout-box">
+            <strong data-i18n="caseBusinessRuleTitleSipostam">Business Rule Kunci:</strong>
+            <span data-i18n="caseBusinessRuleTextSipostam">Transaksi kasir tidak dapat diproses apabila stok produk bernilai nol atau lebih kecil dari jumlah yang dimasukkan ke keranjang belanja, mencegah terjadinya negative stock.</span>
+          </div>
+
+                    <div class="case-gallery-3col case-gallery-compact">
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sipostam-analisis/pdf-p03-img01.png" data-caption="BPMN Pembelian Produk SIPOSTAM">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sipostam-analisis/pdf-p03-img01.png" alt="BPMN pembelian produk SIPOSTAM" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Proses Pembelian Produk</div>
+                <div class="case-ui-sub">Alur pengadaan produk dari pembuatan pesanan hingga pembaruan stok toko.</div>
+              </div>
+            </article>
+
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sipostam-analisis/pdf-p05-img01.png" data-caption="BPMN Penjualan Produk SIPOSTAM">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sipostam-analisis/pdf-p05-img01.png" alt="BPMN penjualan produk SIPOSTAM" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Proses Penjualan Produk</div>
+                <div class="case-ui-sub">Alur transaksi kasir dari pemesanan, validasi ketersediaan, pembayaran, hingga nota.</div>
+              </div>
+            </article>
+
+            <article class="case-ui-card open-lightbox-trigger" data-img="assets/sipostam-analisis/pdf-p07-img01.png" data-caption="BPMN Laporan Penjualan SIPOSTAM">
+              <div class="case-ui-img-wrap">
+                <img src="assets/sipostam-analisis/pdf-p07-img01.png" alt="BPMN laporan penjualan SIPOSTAM" loading="lazy" />
+                <button class="btn-inspect-overlay">Lihat lebih detail</button>
+              </div>
+              <div class="case-ui-info-box">
+                <div class="case-ui-title">Proses Laporan Penjualan</div>
+                <div class="case-ui-sub">Alur rekap data penjualan, validasi pemilik, hingga laporan akhir diterima.</div>
+              </div>
+            </article>
+          </div></section>
+
+        <!-- SECTION: 03 PERANCANGAN SISTEM -->
+        <section id="perancangan" class="case-content-section">
+          <span class="case-section-num-tag">03</span>
+          <h2 class="case-section-h2" data-i18n="caseDesignTitleSipostam">Perancangan Arsitektur Sistem & Basis Data</h2>
+          <p class="case-text-p" data-i18n="caseDesignDescSipostam">
+            Merancang pemodelan Use Case Diagram untuk interaksi peran Kasir dan Owner, serta skema basis data relasional yang menghubungkan tabel produk, kategori, stok, supplier, transaksi penjualan, dan detail nota.
+          </p>
+
+          <div class="case-tags-strip">
+            <span class="tag-clean">Use Case Modeling</span>
+            <span class="tag-clean">Entity Relationship Diagram (ERD)</span>
+            <span class="tag-clean">Database Normalization (3NF)</span>
+          </div>
+
+          <!-- Diagram Preview: Use Case -->
+          <div class="case-diagram-inspector-card">
+            <div class="case-diagram-img-wrap open-lightbox-trigger" data-img="assets/sipostam-analisis/fig-usecase-sipostam.png" data-caption="Use Case Diagram SIPOSTAM">
+              <img src="assets/sipostam-analisis/fig-usecase-sipostam.png" alt="Use Case Diagram SIPOSTAM" />
+              <button class="btn-inspect-overlay">Lihat lebih detail</button>
+            </div>
+            <div class="case-diagram-caption-box">
+              <div>
+                <div class="case-diagram-caption-title">Use Case Diagram SIPOSTAM</div>
+                <div class="case-diagram-caption-sub">Interaksi aktor Admin, Kasir, dan Pemilik terhadap modul utama sistem.</div>
+              </div>
+              <span class="tag-clean">UML Use Case</span>
+            </div>
+          </div>
+
+          <!-- Diagram Preview: Class Diagram -->
+          <div class="case-diagram-inspector-card">
+            <div class="case-diagram-img-wrap open-lightbox-trigger" data-img="assets/sipostam-analisis/fig-class-diagram-sipostam.png" data-caption="Class Diagram SIPOSTAM">
+              <img src="assets/sipostam-analisis/fig-class-diagram-sipostam.png" alt="Class Diagram SIPOSTAM" />
+              <button class="btn-inspect-overlay">Lihat lebih detail</button>
+            </div>
+            <div class="case-diagram-caption-box">
+              <div>
+                <div class="case-diagram-caption-title">Class Diagram SIPOSTAM</div>
+                <div class="case-diagram-caption-sub">Struktur kelas, relasi entitas, dan kontrol proses pada modul transaksi dan inventori.</div>
+              </div>
+              <span class="tag-clean">UML Class Diagram</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: 04 IMPLEMENTASI APLIKASI -->
+        <section id="implementasi" class="case-content-section">
+          <span class="case-section-num-tag">04</span>
+          <h2 class="case-section-h2" data-i18n="caseImplementTitleSipostam">Implementasi Antarmuka Sistem Nyata</h2>
+          <p class="case-text-p" data-i18n="caseImplementDescSipostam">
+            Berikut adalah tangkapan layar antarmuka sistem nyata SIPOSTAM yang telah diuji dan dioperasikan pada Toko Alam Tembakau:
+          </p>
+
+          <div class="case-slideshow-wrap">
+            <div class="case-slideshow-track" id="sipostamSlideTrack">
+            
+              <!-- 1. Transaksi Penjualan Kasir -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sipostam-transaksi-penjualan.png" data-caption="Halaman Transaksi Penjualan Kasir POS SIPOSTAM">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sipostam-transaksi-penjualan.png" alt="Transaksi Kasir POS SIPOSTAM" />
+                  <span class="case-ui-role-pill">Kasir</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseTransactionTitleSipostam">Modul Transaksi Kasir POS Cepat</div>
+                  <div class="case-ui-sub" data-i18n="caseTransactionSubSipostam">Keranjang belanja real-time, pencarian instan produk, kalkulasi diskon & kembalian</div>
+                </div>
+              </div>
+
+              <!-- 2. Dasbor Utama Admin (Owner) -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sipostam-dashboard-admin.png" data-caption="Dasbor Utama Administrator SIPOSTAM - Omset & Laporan Ringkas">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sipostam-dashboard-admin.png" alt="Dasbor Admin SIPOSTAM" />
+                  <span class="case-ui-role-pill">Owner / Admin</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseAdminDashboardTitleSipostam">Dasbor Utama Administrator (Owner)</div>
+                  <div class="case-ui-sub" data-i18n="caseAdminDashboardSubSipostam">Monitoring omset harian, jumlah transaksi, total keuntungan, dan peringatan stok minimum</div>
+                </div>
+              </div>
+
+              <!-- 3. Dasbor Kasir Harian -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sipostam-dashboard-kasir.png" data-caption="Dasbor Kasir Harian SIPOSTAM">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sipostam-dashboard-kasir.png" alt="Dasbor Kasir SIPOSTAM" />
+                  <span class="case-ui-role-pill">Kasir</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseCashierDashboardTitleSipostam">Dasbor Kasir Harian</div>
+                  <div class="case-ui-sub" data-i18n="caseCashierDashboardSubSipostam">Ringkasan transaksi shift berjalan dan tombol cepat masuk ke modul kasir</div>
+                </div>
+              </div>
+
+              <!-- 4. Transaksi Pembelian Supplier -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sipostam-transaksi-pembelian.png" data-caption="Halaman Transaksi Pembelian dari Supplier SIPOSTAM">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sipostam-transaksi-pembelian.png" alt="Transaksi Pembelian Supplier SIPOSTAM" />
+                  <span class="case-ui-role-pill">Admin</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="casePurchaseTitleSipostam">Kelola Pembelian Produk dari Supplier</div>
+                  <div class="case-ui-sub" data-i18n="casePurchaseSubSipostam">Pencatatan pasokan tembakau masuk, harga modal beli, dan penambahan kuantitas stok</div>
+                </div>
+              </div>
+
+              <!-- 5. Kelola Master Produk -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sipostam-kelola-produk.png" data-caption="Halaman Kelola Master Produk dan Stok SIPOSTAM">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sipostam-kelola-produk.png" alt="Kelola Master Produk SIPOSTAM" />
+                  <span class="case-ui-role-pill">Admin</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseProductInventoryTitleSipostam">Kelola Master Produk & Inventori</div>
+                  <div class="case-ui-sub" data-i18n="caseProductInventorySubSipostam">Manajemen multi-kategori (tembakau, papir, cerutu), satuan ukuran, harga beli & jual</div>
+                </div>
+              </div>
+
+              <!-- 6. Kelola Pengguna -->
+              <div class="case-ui-card case-slide open-lightbox-trigger" data-img="assets/implementasi/sipostam-kelola-user.png" data-caption="Halaman Kelola Pengguna Sistem SIPOSTAM">
+                <div class="case-ui-img-wrap">
+                  <img src="assets/implementasi/sipostam-kelola-user.png" alt="Kelola Pengguna SIPOSTAM" />
+                  <span class="case-ui-role-pill">Admin</span>
+                  <button class="btn-inspect-overlay" data-i18n="caseViewDetail">Lihat lebih detail</button>
+                </div>
+                <div class="case-ui-info-box">
+                  <div class="case-ui-title" data-i18n="caseUserManagementTitleSipostam">Kelola Akun Pengguna & Wewenang</div>
+                  <div class="case-ui-sub" data-i18n="caseUserManagementSubSipostam">Pengaturan kredensial akun kasir, pergantian password, dan pemisahan hak akses</div>
+                </div>
+              </div>
+
+            </div>
+            <button class="case-slide-nav prev" id="sipostamPrev" aria-label="Sebelumnya">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="case-slide-nav next" id="sipostamNext" aria-label="Berikutnya">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <div class="case-slide-dots" id="sipostamSlideDots"></div>
+          </div>
+        </section>
+
+        <!-- SECTION: 05 DOKUMENTASI & PENGUJIAN QA -->
+        <section id="pengujian" class="case-content-section">
+          <span class="case-section-num-tag">05</span>
+          <h2 class="case-section-h2" data-i18n="caseDocsQaTitleSipostam">Dokumentasi & Strategi Pengujian Mutu (QA Testing)</h2>
+          <p class="case-text-p" data-i18n="caseDocsQaDescSipostam">
+            Menjamin keandalan fungsionalitas aplikasi kasir POS, sinkronisasi stok otomatis, dan akurasi laporan laba kotor menggunakan teknik <strong>Black Box Testing</strong> menyeluruh pada 9 skenario use case utama (Tabel 6.1 s/d Tabel 6.10) sesuai Dokumen Perancangan Perangkat Lunak (DPPL).
+          </p>
+
+          <!-- Banner Tombol Bukti Uji Black Box Resmi -->
+          <div style="margin: 20px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; background: #ffffff; border: 1px solid var(--border-light); border-left: 4px solid var(--accent-blue); padding: 16px 20px; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+            <div>
+              <div style="font-weight: 700; color: var(--text-main); font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
+                <span data-i18n="caseBlackBoxEvidenceTitleSipostam">Dokumen Bukti Pengujian Black Box Testing</span>
+                <span style="font-size: 0.72rem; background: var(--accent-green-subtle); color: var(--accent-green); border: 1px solid var(--accent-green-border); padding: 2px 7px; border-radius: 4px; font-weight: 700;">9 Use Cases</span>
+              </div>
+              <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 4px;" data-i18n="caseBlackBoxEvidenceSubSipostam">
+                Dokumentasi Perangkat Lunak Bab 6: Pengujian Aplikasi Point of Sales (POS) Toko Alam Tembakau &middot; ULBI.
+              </div>
+            </div>
+            <a href="assets/BLACKBOX_SIPOSTAM.pdf" target="_blank" class="exp-cert-btn" style="padding: 9px 18px; font-size: 0.86rem; background: var(--accent-blue); color: #ffffff; border-color: var(--accent-blue);">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span data-i18n="caseQaEvidenceBtnSipostam">Lihat Bukti Dokumentasi & QA (PDF) ↗</span>
+            </a>
+          </div>
+
+          <div class="table-scroll-hint">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            <span data-i18n="caseTableHintFullSipostam">Geser tabel ke samping untuk melihat seluruh parameter pengujian</span>
+          </div>
+          <div class="qa-table-wrap">
+            <table class="qa-table">
+              <thead>
+                <tr>
+                  <th data-i18n="caseTestCaseHeaderSipostam">ID Test Case</th>
+                  <th data-i18n="caseUseCaseHeaderSipostam">Use Case Diuji</th>
+                  <th data-i18n="caseProcedureHeaderSipostam">Prosedur &amp; Skenario Black Box</th>
+                  <th data-i18n="caseExpectedOutputHeaderSipostam">Keluaran yang Diharapkan</th>
+                  <th data-i18n="caseStatusHeaderSipostam">Status QA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>PDHUPL-1.a &amp; 1.e</code></td>
+                  <td><strong data-i18n="caseLoginValidationSipostam">Validasi Login</strong></td>
+                  <td data-i18n="caseLoginScenarioSipostam">Uji login dengan input kosong, kredensial tidak valid, dan kredensial valid (Kasir &amp; Owner).</td>
+                  <td data-i18n="caseLoginExpectedSipostam">Muncul pesan kesalahan pada data tidak valid; berhasil login dan redirect ke dasbor pada akun valid.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseStatusAcceptedSipostam">&#10003; Diterima / Lolos</span></td>
+                </tr>
+                <tr>
+                  <td><code>PDHUPL-2.a &amp; 2.c</code></td>
+                  <td><strong data-i18n="caseManageUserSipostam">Kelola User</strong></td>
+                  <td data-i18n="caseManageUserScenarioSipostam">Uji penambahan akun kasir baru, update data profil, dan penghapusan akun.</td>
+                  <td data-i18n="caseManageUserExpectedSipostam">Sistem menampilkan pesan sukses, data pengguna baru tersimpan dan terenkripsi pada database.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseStatusAcceptedSipostam">&#10003; Diterima / Lolos</span></td>
+                </tr>
+                <tr>
+                  <td><code>PDHUPL-3.c</code></td>
+                  <td><strong data-i18n="caseManageSupplierSipostam">Kelola Supplier</strong></td>
+                  <td data-i18n="caseManageSupplierScenarioSipostam">Insert data pemasok tembakau dengan format lengkap dan valid.</td>
+                  <td data-i18n="caseManageSupplierExpectedSipostam">Muncul notifikasi berhasil, daftar vendor/supplier terdaftar pada master data.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseStatusAcceptedSipostam">&#10003; Diterima / Lolos</span></td>
+                </tr>
+                <tr>
+                  <td><code>PDHUPL-4.a &amp; 4.c</code></td>
+                  <td><strong data-i18n="caseManageProductStockSipostam">Kelola Produk &amp; Stok</strong></td>
+                  <td data-i18n="caseManageProductStockScenarioSipostam">Input produk baru dengan semua field kosong vs data lengkap dan valid.</td>
+                  <td data-i18n="caseManageProductStockExpectedSipostam">Form validasi memblokir input kosong; produk baru tersimpan lengkap dengan harga modal dan jual.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseStatusAcceptedSipostam">&#10003; Diterima / Lolos</span></td>
+                </tr>
+                <tr>
+                  <td><code>PDHUPL-6.a &amp; 6.c</code></td>
+                  <td><strong data-i18n="caseManageCategorySipostam">Kelola Kategori</strong></td>
+                  <td data-i18n="caseManageCategoryScenarioSipostam">Tambah kategori rokok/tembakau dan update data klasifikasi barang.</td>
+                  <td data-i18n="caseManageCategoryExpectedSipostam">Kategori berhasil ditambahkan dan langsung terhubung dengan katalog produk kasir.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseStatusAcceptedSipostam">&#10003; Diterima / Lolos</span></td>
+                </tr>
+                <tr>
+                  <td><code>PDHUPL-7.b &amp; 7.e</code></td>
+                  <td><strong data-i18n="casePurchaseTransactionSipostam">Transaksi Pembelian</strong></td>
+                  <td data-i18n="casePurchaseTransactionScenarioSipostam">Input transaksi faktur pembelian produk dari supplier dan verifikasi fungsi form.</td>
+                  <td data-i18n="casePurchaseTransactionExpectedSipostam">Data faktur tersimpan, pengeluaran modal tercatat, dan stok barang bertambah secara otomatis.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseStatusAcceptedSipostam">&#10003; Diterima / Lolos</span></td>
+                </tr>
+                <tr>
+                  <td><code>PDHUPL-8.a &amp; 8.c</code></td>
+                  <td><strong data-i18n="caseSalesTransactionSipostam">Transaksi Penjualan (Kasir)</strong></td>
+                  <td data-i18n="caseSalesTransactionScenarioSipostam">Input transaksi kasir cepat, kalkulasi total belanja &amp; kembalian, dan cetak struk nota.</td>
+                  <td data-i18n="caseSalesTransactionExpectedSipostam">Transaksi terekam akurat, struk thermal tercetak rapi, dan mutasi stok berkurang seketika.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseStatusAcceptedSipostam">&#10003; Diterima / Lolos</span></td>
+                </tr>
+                <tr>
+                  <td><code>PDHUPL-9.a &amp; 9.c</code></td>
+                  <td><strong data-i18n="caseFinancialReportSipostam">Laporan Keuangan</strong></td>
+                  <td data-i18n="caseFinancialReportScenarioSipostam">Generate laporan rekapitulasi transaksi omset penjualan dan filter periode tanggal.</td>
+                  <td data-i18n="caseFinancialReportExpectedSipostam">Laporan tergenerate dengan perhitungan laba kotor, total omset, dan modal beli akurat 100%.</td>
+                  <td><span class="status-badge-pass" data-i18n="caseStatusAcceptedSipostam">&#10003; Diterima / Lolos</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION: HASIL & DAMPAK -->
+        <section id="dampak" class="case-content-section">
+          <h2 class="case-section-h2" data-i18n="caseImpactTitleSipostam">Hasil Pekerjaan & Dampak Bisnis</h2>
+          <p class="case-text-p" data-i18n="caseImpactSummarySipostam">
+            Implementasi SIPOSTAM berhasil mentransformasi tata kelola operasional Toko Alam Tembakau menjadi lebih cepat, akurat, dan menguntungkan.
+          </p>
+
+          <div class="case-problem-cards-row">
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-bolt" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#16A34A"></rect><path d="M13.2 7.7L9.7 13h3l-1.6 3.8 5-6h-3l1.1-3.1z" fill="#fff"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseImpact1TitleSipostam">Transaksi Cepat &lt;15 Detik</h3>
+              <p class="case-problem-desc" data-i18n="caseImpact1TextSipostam">
+                Pelayanan kasir berlangsung kurang dari 15 detik per transaksi dengan nota struk digital tercetak rapi.
+              </p>
+            </div>
+
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-package" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#9333EA"></rect><path d="M9.3 10.3l2.7-1.4 2.7 1.4v5.7L12 17.4l-2.7-1.4v-5.7z" stroke="#fff" stroke-width="1.35" stroke-linejoin="round" fill="none"></path><path d="M9.3 10.3L12 11.7l2.7-1.4" stroke="#fff" stroke-width="1.35" stroke-linejoin="round" fill="none"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseImpact2TitleSipostam">Akurasi Stok 100%</h3>
+              <p class="case-problem-desc" data-i18n="caseImpact2TextSipostam">
+                Mengeliminasi selisih stok fisik tembakau di gudang berkat pencatatan mutasi masuk dan keluar yang tersinkronisasi otomatis.
+              </p>
+            </div>
+
+            <div class="case-problem-card">
+              <div class="case-problem-icon"><svg class="mini-app-icon icon-bar" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="#6366F1"></rect><path d="M9 15.6V12.4M12 15.6V10.4M15 15.6V13.4" stroke="#fff" stroke-width="1.7" stroke-linecap="round"></path></svg></div>
+              <h3 class="case-problem-title" data-i18n="caseImpact3TitleSipostam">Analitik Laba Real-Time</h3>
+              <p class="case-problem-desc" data-i18n="caseImpact3TextSipostam">
+                Pemilik toko dapat memantau perputaran omset harian kapan saja tanpa perlu merekap nota manual pada malam hari.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <div class="case-bottom-nav-box">
+          <a href="sibansar.html" class="btn-case-prev">&larr; Proyek Sebelumnya: SIBANSAR</a>
+          <a href="index.html#proyek" class="btn-case-next">Kembali ke Semua Proyek &rarr;</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- LIGHTBOX IMAGE ZOOM MODAL -->
+  <div class="lightbox-overlay" id="lightboxOverlay" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="modal-close-btn" id="lightboxCloseBtn"
+        style="position: absolute; top: -42px; right: 0; background: #ffffff; color: #000;"
+        aria-label="Tutup gambar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <img src="" alt="Perbesar Gambar" id="lightboxImage" class="lightbox-image" />
+      <div id="lightboxCaption" class="lightbox-caption">Judul Gambar</div>
+    </div>
+  </div>
+
+  <div class="site-footer-bar">
+    <div class="container footer-bar-inner">
+      <div class="footer-brand-block">
+        <div class="footer-copyright">&copy; 2026 Muhammad Reyhan Fadina R. Hak cipta dilindungi.</div>
+      </div>
+
+      <div class="footer-role-text">Junior System Analyst &amp; QA Engineer</div>
+    </div>
+  </div>
+
+  <!-- Script for Lightbox & Smooth Scrolling -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lightbox = document.getElementById('lightboxOverlay');
+      const lightboxImg = document.getElementById('lightboxImage');
+      const lightboxCap = document.getElementById('lightboxCaption');
+      const closeBtn = document.getElementById('lightboxCloseBtn');
+
+      document.querySelectorAll('.open-lightbox-trigger').forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          if (window.__isCaseSwiping) return;
+          const src = trigger.getAttribute('data-img');
+          const cap = trigger.getAttribute('data-caption');
+          if (src) {
+            lightboxImg.src = src;
+            lightboxCap.textContent = cap || 'Detail Gambar';
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      if (closeBtn && lightbox) {
+        closeBtn.addEventListener('click', () => {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox) {
+          lightbox.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+
+      // Sidebar scroll spy with instant click highlight & bottom-detection
+      const sections = document.querySelectorAll('.case-content-section');
+      const navLinks = document.querySelectorAll('.case-nav-sidebar-link');
+      const navSidebar = document.querySelector('.case-nav-sidebar');
+      let scrollTimeout;
+      let clickLocked = false;
+      let lockTimer = null;
+
+      function setActiveLink(activeId) {
+        navLinks.forEach(link => {
+          const isMatch = link.getAttribute('href') === `#${activeId}`;
+          link.classList.toggle('active', isMatch);
+          if (isMatch && navSidebar && window.innerWidth <= 900) {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+              const leftPos = link.offsetLeft - (navSidebar.clientWidth / 2) + (link.clientWidth / 2);
+              navSidebar.scrollTo({ left: leftPos, behavior: 'smooth' });
+            }, 60);
+          }
+        });
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          const href = this.getAttribute('href');
+          if (href && href.startsWith('#')) {
+            const targetId = href.slice(1);
+            clickLocked = true;
+            clearTimeout(lockTimer);
+            setActiveLink(targetId);
+            lockTimer = setTimeout(() => {
+              clickLocked = false;
+            }, 900);
+          }
+        });
+      });
+
+      function updateSidebarSpy() {
+        if (clickLocked) return;
+
+        // Check if user is at or near the bottom of the page
+        const atBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 90);
+        if (atBottom && sections.length > 0) {
+          const lastId = sections[sections.length - 1].getAttribute('id');
+          setActiveLink(lastId);
+          return;
+        }
+
+        const scrollPos = window.scrollY + 160;
+        let current = '';
+
+        sections.forEach(s => {
+          const top = s.getBoundingClientRect().top + window.scrollY;
+          if (scrollPos >= top) {
+            current = s.getAttribute('id');
+          }
+        });
+
+        if (current) {
+          setActiveLink(current);
+        }
+      }
+
+      window.addEventListener('scroll', updateSidebarSpy, { passive: true });
+      updateSidebarSpy();
+
+    });
+  </script>
+
+  <script src="js/main.js?v=2.13" charset="UTF-8"></script>
+
+  <!-- Case Study Auto Slideshow with Touch Swipe & Exact Pixel Translation -->
+  <script>
+    (function () {
+      function initSlide(trackId, dotsId, prevId, nextId) {
+        const track = document.getElementById(trackId);
+        const dotsContainer = document.getElementById(dotsId);
+        const prevBtn = document.getElementById(prevId);
+        const nextBtn = document.getElementById(nextId);
+        if (!track || !dotsContainer || !prevBtn || !nextBtn) return;
+
+        const slides = Array.from(track.querySelectorAll('.case-slide'));
+        if (slides.length === 0) return;
+
+        let current = 0;
+        let autoTimer = null;
+
+        dotsContainer.innerHTML = '';
+        slides.forEach(function (_, i) {
+          var dot = document.createElement('button');
+          dot.className = 'case-slide-dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+          dot.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            goTo(i);
+            resetAuto();
+          });
+          dotsContainer.appendChild(dot);
+        });
+        var dots = Array.from(dotsContainer.querySelectorAll('.case-slide-dot'));
+
+        function getSlideWidth() {
+          return track.parentElement.getBoundingClientRect().width;
+        }
+
+        function goTo(idx) {
+          current = (idx + slides.length) % slides.length;
+          const w = getSlideWidth();
+          track.style.transform = 'translateX(-' + (current * w) + 'px)';
+          dots.forEach(function (d, i) { d.classList.toggle('active', i === current); });
+        }
+
+        function next() { goTo(current + 1); resetAuto(); }
+        function prev() { goTo(current - 1); resetAuto(); }
+
+        function startAuto() {
+          if (!autoTimer) autoTimer = setInterval(next, 4500);
+        }
+        function stopAuto() { clearInterval(autoTimer); autoTimer = null; }
+        function resetAuto() { stopAuto(); startAuto(); }
+
+        prevBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          prev();
+        });
+        nextBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          next();
+        });
+
+        track.addEventListener('mouseenter', stopAuto);
+        track.addEventListener('mouseleave', startAuto);
+
+        // Mobile touch swipe support
+        let startX = 0;
+        let currentX = 0;
+        let hasSwiped = false;
+
+        track.addEventListener('touchstart', function (e) {
+          startX = e.touches[0].clientX;
+          currentX = startX;
+          hasSwiped = false;
+          stopAuto();
+        }, { passive: true });
+
+        track.addEventListener('touchmove', function (e) {
+          currentX = e.touches[0].clientX;
+          if (Math.abs(startX - currentX) > 12) {
+            hasSwiped = true;
+            window.__isCaseSwiping = true;
+          }
+        }, { passive: true });
+
+        track.addEventListener('touchend', function () {
+          const diff = startX - currentX;
+          if (hasSwiped && Math.abs(diff) > 40) {
+            if (diff > 0) next();
+            else prev();
+          } else {
+            startAuto();
+          }
+          setTimeout(function () {
+            window.__isCaseSwiping = false;
+          }, 180);
+        }, { passive: true });
+
+        window.addEventListener('resize', function () {
+          goTo(current);
+        });
+
+        goTo(0);
+        startAuto();
+      }
+
+      initSlide('sipostamSlideTrack', 'sipostamSlideDots', 'sipostamPrev', 'sipostamNext');
+    })();
+  </script>
+</body>
+</html>
+
+
+
+
+
